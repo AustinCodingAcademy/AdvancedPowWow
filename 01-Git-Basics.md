@@ -93,7 +93,7 @@ Creating a patch:
 
 ### So what does git add actually do?
 
-Adds the diff between files in the working tree and the state of the files at the most recent commit to the staging area.
+Diff files in the working tree with their corresponding files at the HEAD. Store the resulting patch in the staging area.
 
 ### Creating remote repos on github
 

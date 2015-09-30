@@ -36,6 +36,8 @@ A commit is a name for a collection of file changes. We use that as an opportuni
 
 Whenever you git add a file, the changes to the file are added to the staging area. Commits capture all the changes stored in the staging area. Files themselves are not stored in the staging area, only the file "deltas" (changes).
 
+![git add image](http://i.imgur.com/sQueWcx.png)
+
 ### What is an untracked file?
 
 "Untracked files" are files in the working tree that have not been added to the repo at all.
@@ -123,6 +125,8 @@ Git Workflow
 
 * Master should always be production ready
 * Branches are names for a collection of commits
+
+![git workflow img](http://i.imgur.com/AAUpM0t.png)
 
 ### Creating a new branch
 

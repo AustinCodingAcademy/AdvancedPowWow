@@ -110,7 +110,7 @@ Diff files in the working tree with their corresponding files at the HEAD. Store
 		+ Create a reference to a remote repository named remote_repo_alias
 		+ origin is the conventional name for the default repository
 		
-HEAD - A special alias for the most recent commit for the repo
+HEAD - A special alias for the most recent commit for the branch
 
 git push
 	* Uploads and applies commits to the HEAD of the remote repository.

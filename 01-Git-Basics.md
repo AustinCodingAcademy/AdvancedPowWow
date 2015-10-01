@@ -184,3 +184,45 @@ Then
 `$ git commit` (no -m message)
 
 colon wq to get out of VIM and save the commit
+
+Git Basics - Day 3
+==================
+
+Scenarios
+---------
+
+* "I want to undo changes made to a specific file since the last commit"
+	+ Suppose we haven't added the changes to the staging area?
+		* `git checkout -- thefile.txt`
+	+ What if we have added the changes to the 
+		* `git reset HEAD thefile.txt`
+		* `git checkout -- thefile.txt`
+
+* "I want to undo all my changes made since the last commit"
+	+ `git reset --hard`
+	+ git is very conservative and does not remove unversioned (untracked) files
+	  without you explicitly saying so. This is so you do not lose work.
+	+ equivalent 
+	+ DEFINITION: The "Index" is the same as "the staging area"
+	+ RTFM - Git status man page
+	+ Any changes to tracked files are discarded
+* "I want to delete all the untracked files"
+	+ `git clean`
+	+ Usually has to be done `git clean -f`
+* "I can't checkout my feature branch because git says it would result in a conflict"
+	+ This arises usually when you're switching back and forth between multiple branches
+	  throughout the day
+	+ If the checking out of a branch would not possibly result in a merge conflict, git
+	  will bring the staging area and working tree over to the branch
+	+ Otherwise, we can use the "stash" as a temporary storage of the changes introduced
+	  to the working tree, as well as the diffs stored in the staging area
+	+ `$ git stash` stores the aforementioned information into a temporary holding area
+	  This frees us to check out the desired branch
+	+ `$ git stash pop` extract the changes from the stash and introduces the changes into the current branch
+* "I know a specific commit introduced a regression and I want to undo the changes made by the commit"
+	+ regression - something was working a one point but now it's not
+	+ git will not let you push to the remote branch if commits are found in the remote
+	  branch that do not exist in the local branch.
+        + Use `git revert COMMIT_ID` to create a reversion commit. A reversion commit contains the inverse of the
+          diff that represents the commit we are reverting.
+	+ The COMMIT_IT can be found via `git log` or the list of commits on Github

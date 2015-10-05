@@ -60,6 +60,12 @@ Why does CORS exist?
 	- Without CORS, your site can be used for all these malicious reasons, without you or your users knowing about it.
 * DDoS = Distributed Denial of Service Attack
 	- Server can't handle incoming requests (too many)
+* Dev strategy: the stupid server relay
+	- Have a local backend whose sole job is to relay requests from the front end to the API
+	- This allows us to keep private information (such as API keys) on the backend
+	- This circumvents the CORS issue since the backend and the frontend  will reside on the same server
+	
+![stupid server](images/stupidserver.png)
 
 APIs
 ----
@@ -68,6 +74,8 @@ APIs
 - Super broad term
 - Can also commonly refer to an external service that you make HTTP requests to and get data back.
 - Something that you use to perform a specific task.
+
+![jsonapi](images/jsonapi.png)
 
 Learn 2 things (to make all this less abstract)...
 

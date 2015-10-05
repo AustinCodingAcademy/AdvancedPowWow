@@ -62,6 +62,8 @@ Why does CORS exist?
 	- Server can't handle incoming requests (too many)
 
 APIs
+----
+
 - Application Programming Interface
 - Super broad term
 - Can also commonly refer to an external service that you make HTTP requests to and get data back.

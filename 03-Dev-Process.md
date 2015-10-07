@@ -31,3 +31,15 @@ Examples:
   * `is_valid()`
   * `has_a_house()`
   * `is_stupid()`
+
+Question to ask when creating a method:
+
+* What are the method inputs?
+* What is the method return value?
+* How will the method return value be used?
+* Where are we actually going to call this method?
+
+Always have a way to test your code:
+
+* Unit testing is great, but even if you're not unit testing, you should
+  still always have a way to somehow test your code.

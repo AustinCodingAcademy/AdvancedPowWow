@@ -43,3 +43,8 @@ Always have a way to test your code:
 
 * Unit testing is great, but even if you're not unit testing, you should
   still always have a way to somehow test your code.
+
+Error message debugging strategies:
+
+* Draw as many conclusions you can from the error message.
+* Remove yourself from the context of your project when examining the error message

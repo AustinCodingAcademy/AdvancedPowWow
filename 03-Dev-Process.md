@@ -134,3 +134,27 @@ Actually making the change!
 
 Applying the bidErrors method to the PUT method for validation
 
+Approach:
+
+* POST is creating a new entry
+* PUT is editing an existing entry
+  + PUT needs an identifier - got it
+  
+* When altering code, make only 1 or 2 changes before testing to see if the desired behavior still occurs.
+* Don't get too far in before you discover that a regression has been introduced.
+
+### Assurance
+If my change doesn't break the project, sometimes I like to intentionally break the project
+just to make sure I'm editing the right file, looking at the right server, etc.
+
+### Programming style
+
+Your functions / methods should ONLY do what the name implies they will do. Otherwise
+it can be confusing for other developers.
+
+Objective accomplished - We incorporated our validation method into the putAction!
+
+### Programming style
+
+Functions / API endpoints should try to return the same data type whenever possible.
+

@@ -107,11 +107,11 @@ You have to ask yourself this question - is it better to be correct or better to
 
 It's about risk/reward. Every change in a system introduces risk. You have to gauge whether the reward significantly outweighs the risk.
 
-1) Risk is signifantly decreased whenever products aren't in production. The prototyping phase is the place to make breaking changes and everyone's okay with it. It's the nature of prototyping.
-2) Once a system is in production, then the risk of every change goes up significantly.
-    * It becomes your job to adapt to what's already there
-    * you do the best that you can, but not the best you can't
-3) Refactoring is the practice of altering code while preserving the same responses (or results)
+* Risk is signifantly decreased whenever products aren't in production. The prototyping phase is the place to make breaking changes and everyone's okay with it. It's the nature of prototyping.
+* Once a system is in production, then the risk of every change goes up significantly.
+    + It becomes your job to adapt to what's already there
+    + you do the best that you can, but not the best you can't
+* Refactoring is the practice of altering code while preserving the same responses (or results)
     * How you get there is different
     * But what you get back or what happens is the same
  

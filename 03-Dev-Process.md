@@ -66,8 +66,8 @@ Adding validation to put
 
 ### Altering other peopele's code
 
-Rule #1 of altering people's code: Never ever ever ever ever ever break the behavior resulting from the code, unless the code you're fixing is broken.
-Even if the code itself has silly ideas, or is incorrect in some way that doesn't act as a major detriment to the project, don't mess with it. OR, adapt to it.
+Rule #1 of altering people's code: Only change the behavior of code that is broken (unless you have thoroughly evaluated risk).
+Even if the code itself has silly ideas, or is incorrect in some way that doesn't act as a major detriment to the project, adapt to its faults unless you have thoroughly evaluated the risk of change.
 
 Example: An incorrect HTTP status code being returned on an error.
 

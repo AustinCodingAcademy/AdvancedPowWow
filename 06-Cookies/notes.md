@@ -182,23 +182,23 @@ Use your knowledge of set-cookie, cookie, and sessions.
 
 Assume the following tables exist on the database your app uses:
 
-user table
-+----+----------+----------+
-| id | username | password |
-+----+----------+----------+
-|  2 | joequery | asoetn   |
-|  3 | nicknick | oetnu    |
-|  4 | calicali | lol      |
-+----+----------+----------+
+    user table
+    +----+----------+----------+
+    | id | username | password |
+    +----+----------+----------+
+    |  2 | joequery | asoetn   |
+    |  3 | nicknick | oetnu    |
+    |  4 | calicali | lol      |
+    +----+----------+----------+
 
-profile table
------+----------+-------+------------+-----------+
-| id | user_id  | email | first_name | last_name |
------+----------+-------+------------+-----------+
-|  2 | joequery | asoetn|        Joe | McCullough|
-|  3 | nicknick | oetnu |       Nick |       Dunn|
-|  4 | calicali | lol   |     Callie |    Briscoe|
------+----------+-------+------------+-----------+
+    profile table
+    -----+----------+-------+------------+-----------+
+    | id | user_id  | email | first_name | last_name |
+    -----+----------+-------+------------+-----------+
+    |  2 | joequery | asoetn|        Joe | McCullough|
+    |  3 | nicknick | oetnu |       Nick |       Dunn|
+    |  4 | calicali | lol   |     Callie |    Briscoe|
+    -----+----------+-------+------------+-----------+
 
 The session engine your app uses can
 

@@ -199,3 +199,9 @@ profile table
 |  3 | nicknick | oetnu |       Nick |       Dunn|
 |  4 | calicali | lol   |     Callie |    Briscoe|
 -----+----------+-------+------------+-----------+
+
+The session engine your app uses can
+
+* generate session ids
+* look up data based upon session ids
+* set expiration on a specific session

@@ -205,3 +205,5 @@ The session engine your app uses can
 * generate session ids
 * look up data based upon session ids
 * set expiration on a specific session
+
+![](http://i.imgur.com/nmsjy2T.png)
